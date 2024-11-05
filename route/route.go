@@ -5,7 +5,7 @@ import(
 	"github.com/Kalveir/go-fiber-api/handler"
 )
 
-func setupRoutes(app *fiber.App){
+func Setup(app *fiber.App){
 	app.Get("/book", handler.GetBooks)
 	app.Get("/book/:id", handler.FindBooks)
 	app.Post("/book/store", handler.StoreBooks)
